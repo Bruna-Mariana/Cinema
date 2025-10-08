@@ -3,8 +3,11 @@
 comentário de várias linhas
 */
 
+// class é um seletor que podemos repetir/reutilizar
+// .class - seletor pra coisas especificas
 // seletor{propriedade:valor;}
 // * é o seletor global
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
 
 *{
     margin: 0;
@@ -15,18 +18,81 @@ comentário de várias linhas
     //faz o calculo correto dos tamanhos dos elementos
 }
 
+body{
+    // font-family - define a fonte que será usada no texto
+}
+
+// cores - nome da cor (inglês), rgb e hexadecimal
+
+// rgb() - os valores rgb vão de 0 a 255
+// hexadecimal - um sistema de numeração seguido do #
+header{
+    background-color: #6f2dbd;
+    text-align: center;
+
+    // aninhamento
+    ul{
+        display: flex;
+          // ativa o flexbox e alinha os itens um ao lado do outro
+        list-style: none;
+          // retira o estilo da lista (bolinhas, número)
+        // border: solid;
+        justify-content: space-around; 
+          // propriedade que ajusta no eixo horizontal (eixo de largura)
+            // centrer: alinha ao centro // space-around: espaçamento ao redo do item // space-between: expaçamento entre os itens
+        padding: 10px;
+    }
+
+    h1{
+        font-family: "Cherry Bomb One", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 4rem;
+        color: rgb(240, 225, 231);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #a953bb;
+    }
+}
+
+a{
+    text-decoration: none;
+    //retirei a linha sublinhada da tag a
+    color: aliceblue;
+    padding: 5px;
+}
+
+main{
+     background-color: #f8f9fa;
+    .banner{
+        background-image: url(https://img.freepik.com/vetores-gratis/cartaz-de-tempo-de-filme-de-cinema-horizontal-realista-com-carretel-de-badalo-de-bilhetes-de-lanches-de-oculos-3d-em-fundo-azul-com-ilustracao-vetorial-bokeh_1284-77013.jpg);
+        height: 40vh;
+        background-size: cover;
+            // define o tamanho da imagem do fundo
+        background-position: center;
+            // controla a posição da imagem que será exibida
+        background-repeat: no-repeat;
+    }
+}
+
+.filmes{
+    background-color: black;
+}
+
+.card{
+    width: 50vw;
+    background-color: aqua;
+
+    img{
+        width: 200px;
+        height: auto;
+    }
+    h2{
+        font-weight: 600;
+    }
+}
+
 // seletor{propriedade:valor;}
-// tag
-img{
-    width: 150px;
-}
-
-// .class - seletor pra coisas especificas
-.titulo{
-    color: red;
-}
-
 // #id - seletor
 #btn1{
-    background-color: purple;
+    background-color: rgb(176, 140, 176);
 }
