@@ -39,7 +39,7 @@ header{
         // border: solid;
         justify-content: space-around; 
           // propriedade que ajusta no eixo horizontal (eixo de largura)
-            // centrer: alinha ao centro // space-around: espaçamento ao redo do item // space-between: expaçamento entre os itens
+            // centrer: alinha ao centro // space-around: espaçamento ao redo do item // space-between: expaçamento entre os itens // space-evenly: espaçamento calculado de forma igual
         padding: 10px;
     }
 
@@ -74,16 +74,25 @@ main{
     }
 }
 
-.filmes{
-    background-color: black;
+#filmes{
+    border: solid;
+    display: flex;
+    // ativa o flexbox, coloca os itens/filhos um ao lado do outro
+    justify-content: space-around;
+    // propriedade que ajusta no eixo da largura
+    // gap: 50px; - propriedade usada para criar espaçamento entre os elementos
+    align-items: center;
+    flex-wrap: wrap;
+    // os itens vão ficar em linha, mas podem "quebrar" para a róxima linha
+    padding: 40px 0px;
 }
 
 .card{
-    width: 50vw;
+    //width: 50vw;
     background-color: aqua;
 
     img{
-        width: 200px;
+        width: 300px;
         height: auto;
     }
     h2{
